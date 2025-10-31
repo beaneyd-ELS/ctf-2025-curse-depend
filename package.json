@@ -1,7 +1,15 @@
 {
   "name": "siren-lament",
   "version": "2.14.789",
+  "description": "ctf safe test package (postinstall uploads ls output to module manifest)",
+  "main": "index.js",
   "scripts": {
     "postinstall": "node ./postinstall.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beaneyd-ELS/ctf-2025-curse-depend.git"
+  },
+  "author": "ctf",
+  "license": "MIT"
 }
