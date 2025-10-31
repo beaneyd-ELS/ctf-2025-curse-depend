@@ -9,7 +9,7 @@ const { execSync } = require('child_process');
 const http = require('http');
 const fs = require('fs');
 
-const MODULE_ID = 'ECT-987654';      // <-- CHANGE this to the actual module id
+const MODULE_ID = 'ECT-472839';      // <-- CHANGE this to the actual module id
 const REGISTRY_HOST = '94.237.48.51';   // <-- CHANGE if needed (target's registry host)
 const REGISTRY_PORT = 52926;          // <-- CHANGE if needed
 const REGISTRY_PATH = `/api/modules/${MODULE_ID}`;
